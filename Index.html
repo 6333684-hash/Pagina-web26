@@ -1,10 +1,257 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Mi primera Página</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CELLCOMP | Tecnología y Reparación</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #fff5fa;
+      color: #222;
+    }
+
+    header {
+      background: #171217;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    header h1 {
+      color: #ff69b4;
+      font-size: 30px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 8px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #ff69b4;
+    }
+
+    .inicio {
+      text-align: center;
+      padding: 75px 20px;
+      background: linear-gradient(135deg, #ffd6e9, #ffffff);
+    }
+
+    .inicio h2 {
+      font-size: 38px;
+      margin-bottom: 18px;
+    }
+
+    .inicio span {
+      color: #e83e8c;
+    }
+
+    .inicio p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .boton {
+      display: inline-block;
+      background: #e83e8c;
+      color: white;
+      padding: 13px 22px;
+      border-radius: 25px;
+      text-decoration: none;
+      margin: 5px;
+    }
+
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 28px;
+      margin-bottom: 25px;
+    }
+
+    .contenedor {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .tarjeta {
+      background: white;
+      width: 280px;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px #00000012;
+      border-bottom: 4px solid #ff69b4;
+    }
+
+    .tarjeta .icono {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .tarjeta h3 {
+      margin-bottom: 12px;
+      color: #d63384;
+    }
+
+    .tarjeta p {
+      line-height: 1.6;
+    }
+
+    #nosotros {
+      background: white;
+    }
+
+    #contacto {
+      background: #f9d5e5;
+    }
+
+    footer {
+      background: #171217;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 7px;
+      }
+
+      .inicio h2 {
+        font-size: 30px;
+      }
+
+      .tarjeta {
+        width: 100%;
+        max-width: 330px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-	<h1>¡Hola, mundo!</h1>
-	<p>Este es mi primer sitio web creado desde el Bloc de notas.</p>
+
+  <header>
+    <h1>CELLCOMP</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="inicio" id="inicio">
+    <h2>Bienvenidos a <span>CELLCOMP</span></h2>
+    <p>Tu mundo tecnológico en un solo lugar.</p>
+    <p>Venta de celulares, computadoras y servicios técnicos.</p>
+    <a href="#productos" class="boton">Ver productos</a>
+    <a href="#contacto" class="boton">Contáctanos</a>
+  </section>
+
+  <section id="productos">
+    <h2>Nuestros productos</h2>
+    <div class="contenedor">
+
+      <div class="tarjeta">
+        <div class="icono">📱</div>
+        <h3>Celulares</h3>
+        <p>Encuentra celulares para comunicarte,
+        trabajar, estudiar y disfrutar.</p>
+      </div>
+
+      <div class="tarjeta">
+        <div class="icono">💻</div>
+        <h3>Computadoras</h3>
+        <p>Equipos para tus estudios, trabajo,
+        negocios y entretenimiento.</p>
+      </div>
+
+      <div class="tarjeta">
+        <div class="icono">🎧</div>
+        <h3>Accesorios</h3>
+        <p>Complementa tus equipos con accesorios
+        tecnológicos útiles.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="servicios">
+    <h2>Nuestros servicios técnicos</h2>
+    <div class="contenedor">
+
+      <div class="tarjeta">
+        <div class="icono">🔧</div>
+        <h3>Mantenimiento de celulares</h3>
+        <p>Revisión, diagnóstico y mantenimiento
+        de dispositivos móviles.</p>
+      </div>
+
+      <div class="tarjeta">
+        <div class="icono">🛠️</div>
+        <h3>Mantenimiento de computadoras</h3>
+        <p>Limpieza, diagnóstico y mantenimiento
+        preventivo y correctivo.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="nosotros">
+    <h2>Sobre CELLCOMP</h2>
+    <p>
+      Somos un emprendimiento dedicado a la venta de celulares,
+      computadoras y accesorios tecnológicos. También ofrecemos
+      servicios de mantenimiento y reparación para ayudar a
+      nuestros clientes a mantener sus equipos en buen estado.
+    </p>
+  </section>
+
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <p>¿Buscas un equipo o necesitas mantenimiento técnico?</p>
+    <p>Estamos para ayudarte.</p>
+    <p>Teléfono: Agrega aquí tu número</p>
+    <a class="boton"
+       href="https://wa.me/50300000000"
+       target="_blank"
+       rel="noopener noreferrer">
+       Escríbenos por WhatsApp
+    </a>
+  </section>
+
+  <footer>
+    <p>© 2026 CELLCOMP | Innovación en cada conexión.</p>
+  </footer>
+
 </body>
 </html>
